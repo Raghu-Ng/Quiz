@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Add animation for correct answers */
+@keyframes correct-pulse {
+  0%, 100% { background-color: rgba(16, 185, 129, 0); }
+  50% { background-color: rgba(16, 185, 129, 0.2); }
+}
+
+/* Add animation for wrong answers */
+@keyframes wrong-pulse {
+  0%, 100% { background-color: rgba(239, 68, 68, 0); }
+  50% { background-color: rgba(239, 68, 68, 0.2); }
+}
+
+/* Add animation for correct option */
+@keyframes correct-option-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.7); }
+  50% { box-shadow: 0 0 20px rgba(16, 185, 129, 1); }
+}
+
+/* Add animation for wrong option */
+@keyframes wrong-option-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Landing page animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.animate-correct-pulse {
+  animation: correct-pulse 2s;
+}
+
+.animate-wrong-pulse {
+  animation: wrong-pulse 2s;
+}
+
+.animate-correct-option {
+  animation: correct-option-glow 1.5s infinite;
+}
+
+.animate-wrong-option {
+  animation: wrong-option-shake 0.5s 3;
+}
+
+.animate-correct-pulse {
+  animation: correct-pulse 2s;
+}
+
+.animate-wrong-pulse {
+  animation: wrong-pulse 2s;
+}
+
+.animate-correct-option {
+  animation: correct-option-glow 1.5s infinite;
+}
+
+.animate-wrong-option {
+  animation: wrong-option-shake 0.5s 3;
+}
