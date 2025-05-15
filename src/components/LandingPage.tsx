@@ -56,7 +56,7 @@ const LandingPage = ({ onStartGame }: LandingPageProps) => {
             </p>
 
             <div className={`flex gap-5 transition-all duration-1000 delay-700 ${isReady ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <a href="https://github.https://github.com/Raghu-Ng" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Github size={24} />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
