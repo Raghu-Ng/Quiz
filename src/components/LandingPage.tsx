@@ -65,7 +65,7 @@ const LandingPage = ({ onStartGame }: LandingPageProps) => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Twitter size={24} />
               </a>
-              <a href="https://raghavareddy.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Globe size={24} />
               </a>
             </div>
